@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Average</title>
+		<script type="text/javascript">
+
+			function average(){
+				document.getElementById("avg").value=(parseInt(document.getElementById("num1").value)+parseInt(document.getElementById("num2").value))/2;
+			}
+		</script>
+	</head>
+	<body>
+		<h1 style="color:rgb(6, 112, 6); text-align: center">Calculate Average</h1>
+		<fieldset>
+			<form name="Average">
+			<label style="font-size:20px; color:blue;"><b>First #:</b></label>	
+		<input type="text" id="num1" value="" />
+
+			<p style="font-size:40px; color:red;"">+</p>
+
+			<label style="font-size:20px; color:green;"><b>Second #:</b></label>
+		<input type="text" id="num2" value="" /> <br>	
+		<br><br>
+		
+		<input type="button" id="btnAverage" onclick="average()" value="Find out average"/><br>
+		<br><br>
+		<label style="font-size:20px; color:orange;"><b>Average = </b></label>
+
+		<input type="text" id="avg" value="" /> 
+	<br>
+		</form>
+		</fieldset>
+		
+	</body>
+</html>
